@@ -1,11 +1,13 @@
 {
   "azureFunctions.deploySubpath": "api",
   "azureFunctions.postDeployTask": "npm install",
-  "azureFunctions.projectLanguage": "JavaScript",
+  "azureFunctions.projectLanguage": "Python",
   "azureFunctions.projectRuntime": "~3",
   "debug.internalConsoleOptions": "neverOpen",
   "azureFunctions.preDeployTask": "npm prune",
-  "staticWebApps.appSubpath": "/",
+  "staticWebApps.appSubpath": "angular-app",
   "staticWebApps.apiSubpath": "api",
-  "staticWebApps.outputSubpath": "dist"
+  "staticWebApps.outputSubpath": "dist/angular-app",
+  "azureFunctions.scmDoBuildDuringDeployment": true,
+  "azureFunctions.pythonVenv": ".venv"
 }
